@@ -30,8 +30,8 @@ function BotMainContainer (){
     }
     
     const deleteBot = (bot)=>{
-    const removedABot = bots.filter((b)=> b.id !==bot.id);
-    setBots((bots)=>removedABot)
+    const deletedABot = bots.filter((b)=> b.id !==bot.id);
+    setBots((bots)=>deletedABot)
     }
     
     return (
