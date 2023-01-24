@@ -4,7 +4,7 @@ import BotCard from "./BotCard";
 const YourBotArmy = function({bots, deleteBot, removeBot}){
     const selectedBotArmy =  bots.map((bot)=>{
         return (
-            <CardBot
+            <BotCard
             key={bot.id}
             bot={bot}
             clickEvent={removeBot}
@@ -15,7 +15,7 @@ const YourBotArmy = function({bots, deleteBot, removeBot}){
 
 
     return(
-        <div className= 'd-block p-2 bg-secondary army'>
+        <div className= 'd-block p-2 bg-primary army'>
             <strong className="text-light">BOT BATTLR:click to add bot to your army!</strong>
             <div className="container mt-5">
                 <div className="row army-row">

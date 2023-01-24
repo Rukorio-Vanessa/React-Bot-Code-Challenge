@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import BotCollection from "./BotCollection";
+import YourBotArmy from "./YourBotArmy";
 
 const API_URL = "https://bot-server-five.vercel.app/bots"
 
