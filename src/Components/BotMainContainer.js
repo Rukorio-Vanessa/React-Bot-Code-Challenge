@@ -29,18 +29,22 @@ function BotMainContainer (){
     setBots(bots.map((b)=>(b.id === bot.id ? {...b, army:false} : b)))
     }
     
-    const deleteBot = (bot)=>{
+    const deleteBotHandler = (bot)=>{
     const deletedABot = bots.filter((b)=> b.id !==bot.id);
     setBots((bots)=>deletedABot)
     }
     
     return (
     <div>
-    
+    <YourBotArmy
+      bots={bots.filter((b)=>b.army)}
+      removeBot={removeBot}
+      deleteBotHandler={deleteBotHandler}
+    />
     <BotCollection
-    botsNo={bots}
-    addBot={addBot}
-    deleteBot={deleteBot}
+      botsNo={bots}
+      addBot={addBot}
+      deleteBotHandler={deleteBotHandler}
     />
     </div>
     )
