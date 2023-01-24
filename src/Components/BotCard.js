@@ -1,14 +1,14 @@
-import React from "react";
+import React, {} from "react";
 
 
 function BotCard({bot}){
     return(
       <div className="col-3 p-1 my-2">
-      <div className="card h-100" style={{width:"18rem"}}>
-          <img src="#" className="card-img-top " alt={"bot pic"}/>
+      <div className="card h-120" style={{width:"22rem"}}>
+          <img src={bot.avatar_url} className="card-img-top " alt={"bot avatar"}/>
           <div className="card-body">
-              <h5 className="card-title">{"Bot Name"}</h5>
-              <p className="card-text">{"catchphrase"}</p>
+              <h4 className="card-title">{bot.name}</h4>
+              <p className="card-text">{bot.catcphrase}</p>
           </div>
       </div>
   </div>

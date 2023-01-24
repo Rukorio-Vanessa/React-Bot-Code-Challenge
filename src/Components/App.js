@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import BotCard from './BotCard';
+import BotMainContainer from './BotMainContainer';
 
 function App() {
   return (
     <div className="App">
-      <BotCard/>
+      <BotMainContainer/>
     </div>
   );
 }
