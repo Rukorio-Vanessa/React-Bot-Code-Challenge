@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import BotCollection from "./BotCollection";
 import YourBotArmy from "./YourBotArmy";
 
+//url for my json file hosted as an api
 const API_URL = "https://bot-server-five.vercel.app/bots"
 
 function BotMainContainer (){
@@ -36,6 +37,7 @@ function BotMainContainer (){
     
     return (
     <div>
+  
     <YourBotArmy
       bots={bots.filter((b)=>b.army)}
       removeBot={removeBot}

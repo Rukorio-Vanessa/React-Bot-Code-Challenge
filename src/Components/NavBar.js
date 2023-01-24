@@ -4,7 +4,7 @@ const Navbar = function(){
     return(
         <nav className="navbar bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand text-light" href="#">BOT BATTLR</a>
+            <h5 className="navbar-brand text-light">BOT BATTLR</h5>
 
         </div>
       </nav>

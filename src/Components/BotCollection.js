@@ -1,15 +1,15 @@
-import React,{ useEffect, useState } from "react";
+import React from "react";
 import BotCard from "./BotCard";
 
-const BotCollection = function({botsNo, addBot, deleteBot}){
+const BotCollection = function({botsNo, addBot, deleteBotHandler}){
     const toDisplayBot = botsNo.map((bot)=>{
         return (
             <BotCard 
             
             key={bot.id}
             bot={bot}
-            clickEvent={addBot}
-            deleteBot={deleteBot}
+            clickBotHandler={addBot}
+            deleteBotHandler={deleteBotHandler}
             
             />
 
